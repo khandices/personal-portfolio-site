@@ -9,12 +9,13 @@ yellow: #FFD56B
 font color: #3E3D42 */
 
 
-@media screen and (min-width: 430px) {
-   #about-me .my-pic-border {
+@media screen and (min-width: 400px) {
+
+  #about-me .my-pic-border {
     z-index: 1;
     position: absolute;
     top: 120px;
-    right: 450px;
+    left: 350px;
     border:solid #c78ecd;
     width: 300px;
     height: 400px;
@@ -24,17 +25,10 @@ font color: #3E3D42 */
 @media screen and (min-width: 730px) {
   #about-me .personal-pic {
     height: 400px;
+    image-resolution: 300dpi;
     
 }
-  #about-me .my-pic-border {
-    z-index: 1;
-    position: absolute;
-    top: 120px;
-    right: 450px;
-    border:solid #c78ecd;
-    width: 300px;
-    height: 400px;
-  }
+  
 
   #about-me p {
   margin: 40px 300px;
@@ -52,14 +46,45 @@ font color: #3E3D42 */
     
     
   }
+
+  #portfolio-grid b {
+    font-size: 22px;
+    text-decoration: underline;
+  }
+  
+  #portfolio-grid p {
+    font-size: 20px;
+  }
+
+  #portfolio-grid li {
+    font-size: 13px;
+    
+  }
+
+  #portfolio-grid ul {
+    margin: 5px 100px;
+    
+  }
+
+  #portfolio-grid a {
+    font-size: 17px;
+  } 
+
+  #portfolio-grid .portfolio-grid-item {
+  margin: auto;
+  margin-bottom: 10px;
+  padding: 15px;
+  background-color: #4e846d;
+  height: 200px;
+  width: 600px;
+  text-align: center;
+  border-radius: 3px;
+  /* transition: all 0.25s ease-in-out; */
+  box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.4);
+  
+  }
 }
 
-/* @media screen and (min-width: 595px)
-{
-  #homepage-blurb {
-    padding: 50%;
-  } 
-} */
 
 body {
   background-color: #346751;
@@ -94,48 +119,6 @@ body {
 #nav-bar li a:hover {
   background-color: #2e5b47;
 }
-
-/* .nav-menu {
-  display: inline-block;
-  position: relative;
-  width: 150px;
-  
-  
-}
-.dropdown-button {
-  width: 150px;
-  height: 30px;
-  border: none;
-  color: #888888;
-  background-color: white;
-  padding: 16px 0px;
-  font-size: 25px;
-  text-align: left;
-
-}
-.dropdown-content {
-  display: none;
-  position: absolute;
-  width: 100%;
-  overflow: auto;
-  box-shadow: 0px 3px 7px 0px rgba(0,0,0,0.4);
-  border-radius: 3px;
-}
-.nav-menu:hover .dropdown-content {
-  display: block;
-}
-.dropdown-content a {
-  display: block;
-  color: #000000;
-  padding: 5px;
-  text-decoration: none;
-}
-.dropdown-content a:hover {
-  color: #FFFFFF;
-  background-color: #D06224;
-} */
-
-
 
 
 footer {
@@ -246,6 +229,7 @@ footer a:hover {
 
 .my-pic {
   margin-bottom: 80px;
+  
 }
 
 .personal-pic {
@@ -254,19 +238,9 @@ footer a:hover {
   margin-left: auto;
   margin-right: auto;
   height: 300px;
-  z-index: 2;
-  position: relative;
+  border-radius: 20em;
 }
 
-.my-pic-border {
-  z-index: 1;
-  position: absolute;
-  bottom: 425px;
-  right: 35px;
-  border:solid #c78ecd;
-  width: 220px;
-  height: 300px;
-}
 
 
 
@@ -297,7 +271,7 @@ ul.links {
   margin-top: 0px;
 }
 
-#portfolio-grid p {
+.portfolio-grid-item p {
   font-size: 11px;
   padding: 0px;
   margin: 0px 0px 0px;
@@ -310,6 +284,7 @@ ul.tech-stack {
   padding: 0px;
   font-size: 10px;
   margin: 0px;
+  text-align: left;
   
 }
 
